@@ -24,7 +24,7 @@ body {
 
   position: relative;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-between;
   padding: 24px;
 }
@@ -51,7 +51,7 @@ body {
 
 .card__text-wrapper {
   margin-left: 32px;
-  height:min-content;
+  height: min-content;
 }
 
 .card__title {
@@ -104,10 +104,25 @@ body {
 }
 
 .card__button-close {
-  position:absolute;
+  position: absolute;
   right: 16px;
   top: 16px;
+  fill: @gray-300;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
 }
+
+.card__button-close svg:hover {
+  background-color: @gray-40;
+  fill: @gray-750;
+}
+
+.card__button-close svg:active {
+  background-color: @gray-100;
+  fill: @gray-750;
+}
+
 
 @media (max-width: @beauty-width) {
 
@@ -147,7 +162,7 @@ body {
 
 }
 
-@media (max-width: 771px ) {
+@media (max-width: 771px) {
 
   .card__ur-status {
     width: 184px;
@@ -163,7 +178,7 @@ body {
 
 }
 
-@media (max-width: 767px ) {
+@media (max-width: 767px) {
 
   .section__wrapper {
     margin: 0 8px;
@@ -229,34 +244,24 @@ body {
   margin-bottom: 22px;
 }
 
-.buy__price-status {
+.buy__price-status {}
 
-}
+.buy__price-status--higher-price {}
 
-.buy__price-status--higher-price {
+.buy__price-status--lower-price {}
 
-}
+.buy__status-price {}
 
-.buy__price-status--lower-price {
-
-}
-
-.buy__status-price{
-
-}
-
-.buy__status-price--higher-price{
+.buy__status-price--higher-price {
   .paragraph-medium-left-red500;
 }
 
-.buy__status-price--lower-price{
-
-}
+.buy__status-price--lower-price {}
 
 .buy__button {
   width: 268px;
-
 }
+
 
 .button {
   border-radius: 6px;
@@ -265,6 +270,7 @@ body {
   align-items: center;
   .paragraph-medium-left-gray750;
 }
+
 
 .button--large {
   padding: 12px 24px;
@@ -280,6 +286,14 @@ body {
 
 .button--primary {
   background-color: @primary-500;
+}
+
+.button--primary:hover {
+  background-color: @primary-700;
+}
+
+.button--primary:active {
+  background-color: @primary-800;
 }
 
 .button--alert {
@@ -339,9 +353,7 @@ body {
 
 //icon
 
-.icon {
-
-}
+.icon {}
 
 .icon__check {
   margin-right: 10px;
@@ -355,6 +367,4 @@ body {
   margin-right: 8px;
 }
 
-.icon__cross {
-
-}
+.icon__cross {}

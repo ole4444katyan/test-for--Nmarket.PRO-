@@ -24,8 +24,9 @@ ul {
   list-style-type: none;
 }
 button {
-  border: none;
+  border: transparent;
   background-color: transparent;
+  outline: none;
 }
 dl,
 dt,
@@ -156,6 +157,18 @@ body {
   position: absolute;
   right: 16px;
   top: 16px;
+  fill: #B2B0AB;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+}
+.card__button-close svg:hover {
+  background-color: #F5F4F2;
+  fill: #383736;
+}
+.card__button-close svg:active {
+  background-color: #E7E4DE;
+  fill: #383736;
 }
 @media (max-width: 1095px) {
   .card__list {
@@ -306,6 +319,12 @@ body {
 }
 .button--primary {
   background-color: #FAC62D;
+}
+.button--primary:hover {
+  background-color: #F0B505;
+}
+.button--primary:active {
+  background-color: #E1AB08;
 }
 .button--alert {
   background-color: #FAF0F0;
