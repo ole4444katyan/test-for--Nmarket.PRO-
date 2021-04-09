@@ -1,0 +1,360 @@
+body {
+  min-width: 320px;
+  color: @gray-400;
+  background-color: @gray-40;
+}
+
+
+//container
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section__wrapper {
+  margin: 0 30px;
+}
+
+//card
+
+.card {
+  background-color: @white;
+  .pop-up-shadow;
+
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.card__wrapper {
+  max-width: 1200px;
+  height: auto;
+  margin: 40px auto;
+}
+
+
+.card__content {
+  width: auto;
+  height: auto;
+  display: flex;
+}
+
+
+.card__img {
+  width: 178px;
+  height: 178px;
+
+}
+
+.card__text-wrapper {
+  margin-left: 32px;
+  height:min-content;
+}
+
+.card__title {
+  .heading-3-left-gray750;
+  margin-bottom: 8px;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 84px;
+  margin-bottom: 18px;
+}
+
+.card__item {
+  height: 36px;
+}
+
+.card__list-item {
+  .caption-left-gray400
+}
+
+.card__item-description {
+  .paragraph-medium-left-gray750;
+}
+
+.card__status {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__ur-status {
+  .caption-medium-left-green500;
+  .button-status;
+  background-color: @green-20;
+  margin-right: 16px;
+}
+
+.card__bank-status {
+  .caption-medium-left-red500;
+  .button-status;
+  background-color: @red-20;
+
+}
+
+.card__buy {
+  width: 308px;
+}
+
+.card__button-close {
+  position:absolute;
+  right: 16px;
+  top: 16px;
+}
+
+@media (max-width: @beauty-width) {
+
+  .card__list {
+    max-height: 132px;
+    gap: 12px;
+  }
+
+  .card__status {
+    flex-direction: column;
+  }
+
+  .card__ur-status {
+    margin-bottom: 8px;
+  }
+
+}
+
+@media (max-width: @beauty2-width) {
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card__status {
+    flex-direction: row;
+    margin-bottom: 24px;
+  }
+
+  .card__ur-status {
+    margin-bottom: 0;
+  }
+
+  .card__list {
+    margin-right: 212px;
+  }
+
+}
+
+@media (max-width: 771px ) {
+
+  .card__ur-status {
+    width: 184px;
+    height: 32px;
+    padding: 6px 15px 6px 12px;
+  }
+
+  .card__bank-status {
+    height: 32px;
+    width: 249px;
+    padding: 2px 15px 2px 12px;
+  }
+
+}
+
+@media (max-width: 767px ) {
+
+  .section__wrapper {
+    margin: 0 8px;
+  }
+
+  .card {
+    padding: 20px;
+    padding-left: 16px;
+  }
+
+  .card__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card__img {
+    margin-bottom: 16px;
+  }
+
+  .card__text-wrapper {
+    margin-left: 0;
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 28px;
+    width: 124px;
+  }
+
+  .card__list {
+    margin-right: 0;
+  }
+
+  .card__ur-status {
+    margin-bottom: 8px;
+  }
+}
+
+//buy
+
+.buy {
+  border-left: 1px solid @gray-50;
+  padding-left: 32px;
+}
+
+.buy__ur-status {
+  .paragraph-left-gray400;
+  margin-bottom: 1px;
+}
+
+.buy__ur-status-data {
+  .paragraph-medium-left-blue500;
+}
+
+.buy__price {
+  .heading-3-left-gray750;
+  margin-bottom: 15px;
+}
+
+.buy__status {
+  .paragraph-left-gray400;
+  width: 193px;
+  margin-bottom: 22px;
+}
+
+.buy__price-status {
+
+}
+
+.buy__price-status--higher-price {
+
+}
+
+.buy__price-status--lower-price {
+
+}
+
+.buy__status-price{
+
+}
+
+.buy__status-price--higher-price{
+  .paragraph-medium-left-red500;
+}
+
+.buy__status-price--lower-price{
+
+}
+
+.buy__button {
+  width: 268px;
+
+}
+
+.button {
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .paragraph-medium-left-gray750;
+}
+
+.button--large {
+  padding: 12px 24px;
+}
+
+.button--medium {
+  padding: 8px 16px;
+}
+
+.button--small {
+  padding: 4px 12px;
+}
+
+.button--primary {
+  background-color: @primary-500;
+}
+
+.button--alert {
+  background-color: @red-20;
+}
+
+.button--muted {
+  background-color: @white;
+}
+
+.button--primary-border {
+  border: 1px solid @primary-500;
+}
+
+.button--secondary {
+  background-color: @gray-40;
+}
+
+.button--secondary-border {
+  border: 1px solid @gray-50;
+}
+
+.button--success {
+  background-color: @green-40;
+}
+
+.button--tertiary {
+  background-color: @blue-40;
+}
+
+.button--disabled-primary {
+  background-color: @gray-40;
+}
+
+
+
+@media (max-width: @beauty2-width) {
+
+  .buy {
+    border-left: none;
+    border-top: 1px solid @gray-50;
+    padding-top: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    width: 100%;
+  }
+
+  .buy__button {
+    width: 100%;
+  }
+
+}
+
+
+
+
+//icon
+
+.icon {
+
+}
+
+.icon__check {
+  margin-right: 10px;
+}
+
+.icon__cross-bold {
+  margin-right: 11px;
+}
+
+.icon__key {
+  margin-right: 8px;
+}
+
+.icon__cross {
+
+}

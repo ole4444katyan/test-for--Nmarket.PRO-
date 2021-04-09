@@ -1,0 +1,51 @@
+{
+  "name": "maine-coon",
+  "version": "1.0.0",
+  "description": "Кошачий питомник Мейн-Кунов",
+  "main": "index.js",
+  "devDependencies": {
+    "autoprefixer": "^10.0.2",
+    "browser-sync": "^2.26.13",
+    "browserslist": "^4.16.3",
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.1.7",
+    "stylelint": "13.7.2"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig",
+    "build": "gulp styles",
+    "start": "gulp"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/less/**/*.less"
+  ],
+  "engines": {
+    "node": "13.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ole4444katyan/maine-coon.git"
+  },
+  "author": "ole4444latyan",
+  "license": "ISC",
+  "homepage": "https://github.com/ole4444katyan/maine-coon#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
